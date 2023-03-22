@@ -1,0 +1,185 @@
+body {
+ background-color: #ffffff;
+ font-family: 'Roboto', sans-serif;
+ color: #434455;
+}
+
+:root {
+ --logo-color: #4d5ae5;
+ --logo-accent-header-color: #2e2f42;
+ --logo-accent-footer-color: #f4f4fd;
+ --nav-background-color: #ffffff;
+ --nav-color: #2e2f42;
+ --nav-hoverfocus-color: #404bbf;
+ --address-color: #434455;
+ --hero-background-color: #2e2f42;
+ --hero-title-color: #ffffff;
+ --hero-btn-background-color: #4d5ae5;
+ --hero-btn-color: #ffffff;
+ --hero-btn-hoverfocus-background-color: #404bbf;
+ --list-btn-color: #4d5ae5;
+ --list-btn-background-color: #f4f4fd;
+ --list-btn-hoverfocus-background-color: #404bbf;
+ --list-btn-hoverfocus-color: #ffffff;
+ --main-title-color: #2e2f42;
+ --main-subtitle-color: #2e2f42;
+ --main-text-color: #434455;
+ --footer-background-color: #2e2f42;
+ --footer-color: #f4f4fd;
+}
+
+.list {
+ list-style: none;
+}
+
+.link {
+ text-decoration: none;
+}
+
+.title {
+ font-weight: 700;
+ font-size: 36px;
+ line-height: 1.11;
+ text-align: center;
+ letter-spacing: 0.02em;
+ text-transform: capitalize;
+ color: var(--main-title-color, #2e2f42);
+}
+
+.subtitle {
+ font-weight: 500;
+ font-size: 20px;
+ line-height: 1.2;
+ letter-spacing: 0.02em;
+ color: var(--main-subtitle-color, #2e2f42);
+}
+
+.text {
+ font-size: 16px;
+ line-height: 1.5;
+ letter-spacing: 0.02em;
+ color: var(--main-text-color, #434455);
+}
+
+/*------------------ Header ---------------------------*/
+/*-------LOGO+NAV Studio+Portfolio pages --------*/
+.logo {
+ font-family: 'Raleway', sans-serif;
+ font-style: normal;
+ font-weight: 800;
+ font-size: 18px;
+ line-height: 1.17;
+ letter-spacing: 0.03em;
+ text-transform: uppercase;
+ text-decoration: none;
+ color: var(--logo-color, #4d5ae5);
+}
+.accent-header {
+ color: var(--logo-accent-header-color, #2e2f42);
+}
+
+.nav-item {
+ font-weight: 500;
+ font-size: 16px;
+ line-height: 1.5;
+ letter-spacing: 0.02em;
+ color: var(--nav-color, #2e2f42);
+ background-color: var(--nav-background-color, #ffffff);
+}
+.nav-item:hover,
+.nav-item:focus {
+ color: var(--nav-hoverfocus-color, #404bbf);
+}
+
+.address {
+ font-style: normal;
+ font-size: 16px;
+ line-height: 1.5;
+ letter-spacing: 0.02em;
+}
+
+.address-link {
+ color: var(--address-color, #434455);
+}
+.address-link:hover,
+.address-link:focus {
+ color: #404bbf;
+}
+/*-------------Studio page. MAIN --------------*/
+.hero-portfolio {
+ background-color: inherit;
+}
+.hero {
+ background-color: var(--hero-background-color, #2e2f42);
+}
+.hero-title {
+ font-weight: 700;
+ font-size: 56px;
+ line-height: 1.07;
+ text-align: center;
+ letter-spacing: 0.02em;
+ color: var(--hero-title-color, #ffffff);
+}
+
+.hero-btn {
+ font-family: inherit;
+ font-weight: 500;
+ font-size: 16px;
+ line-height: 1.5;
+ letter-spacing: 0.04em;
+ cursor: pointer;
+ color: var(--hero-btn-color, #ffffff);
+ background-color: var(--hero-btn-background-color, #4d5ae5);
+}
+.hero-btn:hover,
+.hero-btn:focus {
+ background-color: var(--hero-btn-hoverfocus-background-color, #404bbf);
+}
+
+/*------Portfolio page. MAIN -------*/
+/*---------------------- Section 1 -----------------------*/
+.list-btn {
+ font-family: inherit;
+ font-weight: 500;
+ font-size: 16px;
+ line-height: 1.5;
+ letter-spacing: 0.04em;
+ cursor: pointer;
+ color: var(--list-btn-color, #4d5ae5);
+ background-color: var(--list-btn-background-color, #f4f4fd);
+}
+.list-btn:hover,
+.list-btn:focus {
+ background-color: var(--list-btn-hoverfocus-background-color, #404bbf);
+ color: var(--list-btn-hoverfocus-color, #ffffff);
+}
+
+/*---------------------- Section 4 -----------------------*/
+.team {
+ background-color: #f4f4fd;
+}
+.team-item {
+ background-color: #ffffff;
+}
+/*-------------- FOOTER - Подвал страницы ---------------*/
+.footer {
+ background-color: var(--footer-background-color, #2e2f42);
+ font-size: 16px;
+ line-height: 1.5;
+ letter-spacing: 0.02em;
+ color: var(--footer-color, #f4f4fd);
+}
+.logo {
+ font-family: 'Raleway', sans-serif;
+ font-style: normal;
+ font-weight: 800;
+ font-size: 18px;
+ line-height: 1.17;
+ letter-spacing: 0.03em;
+ text-transform: uppercase;
+ text-decoration: none;
+ color: var(--logo-color, #4d5ae5);
+}
+.accent-footer {
+ color: var(--logo-accent-footer-color, #f4f4fd);
+}
