@@ -24,17 +24,44 @@
   --footer-color: #f4f4fd;
 }
 
-body {
-  background-color: #ffffff;
-  font-family: 'Roboto', sans-serif;
-  color: #434455;
+/*--- Сброс всех стилей браузера, для удобвства делаем всегда !---*/
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+ul {
+  margin: 0;
+  padding-left: 0;
+}
+address {
+  font-style: normal;
+}
+button {
+  cursor: pointer;
 }
 .list {
   list-style: none;
 }
-
-.link {
+.link .logo {
   text-decoration: none;
+}
+/*--- задаем размер контейнера всей старницы---*/
+.container {
+  width: 1128px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+
+body {
+  background-color: #ffffff;
+  font-family: 'Roboto', sans-serif;
+  color: #434455;
 }
 
 .title {
@@ -71,14 +98,13 @@ body {
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  text-decoration: none;
   color: var(--logo-color);
 }
-.accent-header {
+.accent.header {
   color: var(--logo-accent-header-color);
 }
 
-.nav-item {
+.nav.link {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -86,33 +112,32 @@ body {
   color: var(--nav-color);
   background-color: var(--nav-background-color);
 }
-.nav-item:hover,
-.nav-item:focus {
+.nav.link:hover,
+.nav.link:focus {
   color: var(--nav-hoverfocus-color);
 }
 
 .address {
-  font-style: normal;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
 }
 
-.address-link {
+.address.link {
   color: var(--address-color);
 }
-.address-link:hover,
-.address-link:focus {
+.address.link:hover,
+.address.link:focus {
   color: #404bbf;
 }
 /*-------------Studio page. MAIN --------------*/
-.hero-portfolio {
+.hero.portfolio {
   background-color: inherit;
 }
 .hero {
   background-color: var(--hero-background-color);
 }
-.hero-title {
+.hero.title {
   font-weight: 700;
   font-size: 56px;
   line-height: 1.07;
@@ -121,35 +146,33 @@ body {
   color: var(--hero-title-color);
 }
 
-.hero-btn {
+.hero.btn {
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.04em;
-  cursor: pointer;
   color: var(--hero-btn-color);
   background-color: var(--hero-btn-background-color);
 }
-.hero-btn:hover,
-.hero-btn:focus {
+.hero.btn:hover,
+.hero.btn:focus {
   background-color: var(--hero-btn-hoverfocus-background-color);
 }
 
 /*------Portfolio page. MAIN -------*/
 /*---------------------- Section 1 -----------------------*/
-.list-btn {
+.list.btn {
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.04em;
-  cursor: pointer;
   color: var(--list-btn-color);
   background-color: var(--list-btn-background-color);
 }
-.list-btn:hover,
-.list-btn:focus {
+.list.btn:hover,
+.list.btn:focus {
   background-color: var(--list-btn-hoverfocus-background-color);
   color: var(--list-btn-hoverfocus-color);
 }
@@ -158,7 +181,7 @@ body {
 .team {
   background-color: var(--team-background-color) #f4f4fd;
 }
-.team-item {
+.team.item {
   background-color: var(--team-item-background-color);
 }
 /*-------------- FOOTER - Подвал страницы ---------------*/
@@ -176,9 +199,8 @@ body {
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  text-decoration: none;
   color: var(--logo-color);
 }
-.accent-footer {
+.accent.footer {
   color: var(--logo-accent-footer-color);
 }

@@ -16,58 +16,61 @@
     <!-- Сначала нормализатор стилей -->
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
     />
     <!-- Потом мои стили -->
     <link href="./css/styles.css" rel="stylesheet" />
   </head>
 
   <body>
-    <header>
-      <nav class="nav">
-        <a class="logo link" href="./index.html"
-          >Web<span class="accent-header">Studio</span>
-        </a>
-        <ul class="list">
-          <li><a class="nav-item link" href="./index.html">Studio</a></li>
-          <li>
-            <a class="nav-item link" href="./portfolio.html">Portfolio</a>
-          </li>
-          <li><a class="nav-item link" href="">Contacts</a></li>
-        </ul>
-      </nav>
 
-      <address class="address">
-        <ul class="address list">
-          <li>
-            <a class="address-link link" href="mailto:info@devstudio.com"
-              >info@devstudio.com</a
-            >
-          </li>
-          <li>
-            <a class="address-link link" href="tel:+110001111111"
-              >+11 (000) 111-11-11</a
-            >
-          </li>
-        </ul>
-      </address>
+    <header>
+      <div class="container">
+        <nav class="nav">
+          <a class="logo link" href="./index.html"
+            >Web<span class="accent header">Studio</span>
+          </a>
+          <ul class="nav list">
+            <li><a class="nav link" href="./index.html">Studio</a></li>
+            <li>
+              <a class="nav link" href="./portfolio.html">Portfolio</a>
+            </li>
+            <li><a class="nav link" href="">Contacts</a></li>
+          </ul>
+        </nav>
+          <ul class="address list">
+            <li>
+              <a class="address link" href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+            <li>
+              <a class="address link" href="tel:+110001111111"
+                >+11 (000) 111-11-11</a
+              >
+            </li>
+          </ul>
+      </div>
     </header>
 
     <main>
       <!-- Section 1 Hero filter -->
       <section>
         <h1 hidden>Hero filter</h1>
-        <ul class="filter-list list">
-          <li><button class="list-btn btn" type="button">All</button></li>
-          <li><button class="list-btn btn" type="button">Web Site</button></li>
-          <li><button class="list-btn btn" type="button">App</button></li>
-          <li><button class="list-btn btn" type="button">Design</button></li>
-          <li><button class="list-btn btn" type="button">Marketing</button></li>
+        <ul class="filter list">
+          <li><button class="list btn" type="button">All</button></li>
+          <li><button class="list btn" type="button">Web Site</button></li>
+          <li><button class="list btn" type="button">App</button></li>
+          <li><button class="list btn" type="button">Design</button></li>
+          <li><button class="list btn" type="button">Marketing</button></li>
         </ul>
 
         <ul class="card list">
           <!-- Card #1 -->
-          <li class="card list">
+          <li class="card item">
             <a href="#" class="link">
               <img
                 src="./images/portfolio/img-1.jpg"
@@ -75,14 +78,14 @@
                 width="360"
                 height="300"
               />
-              <h2 class="item-subtitle subtitle">
+              <h2 class="card subtitle">
                 Banking App Interface Concept
               </h2>
-              <p class="item-text text">App</p>
+              <p class="card text">App</p>
             </a>
           </li>
           <!-- Card #2 -->
-          <li class="card list">
+          <li class="card item">
             <a href="#" class="link">
               <img
                 src="./images/portfolio/img-2.jpg"
@@ -90,12 +93,12 @@
                 width="360"
                 height="300"
               />
-              <h2 class="item-subtitle subtitle">Cashless Payment</h2>
-              <p class="item-text text">Marketing</p>
+              <h2 class="card subtitle">Cashless Payment</h2>
+              <p class="card text">Marketing</p>
             </a>
           </li>
           <!-- Card #3 -->
-          <li class="card list">
+          <li class="card item">
             <a href="#" class="link">
               <img
                 src="./images/portfolio/img-3.jpg"
@@ -103,12 +106,12 @@
                 width="360"
                 height="300"
               />
-              <h2 class="item-subtitle subtitle">Meditation App</h2>
-              <p class="item-text text">App</p>
+              <h2 class="card subtitle">Meditation App</h2>
+              <p class="card text">App</p>
             </a>
           </li>
           <!-- Card #4 -->
-          <li class="card list">
+          <li class="card item">
             <a href="#" class="link">
               <img
                 src="./images/portfolio/img-4.jpg"
@@ -116,12 +119,12 @@
                 width="360"
                 height="300"
               />
-              <h2 class="item-subtitle subtitle">Taxi Service</h2>
-              <p class="item-text text">Marketing</p>
+              <h2 class="card subtitle">Taxi Service</h2>
+              <p class="card text">Marketing</p>
             </a>
           </li>
           <!-- Card #5 -->
-          <li class="card list">
+          <li class="card item">
             <a href="#" class="link">
               <img
                 src="./images/portfolio/img-5.jpg"
@@ -129,12 +132,12 @@
                 width="360"
                 height="300"
               />
-              <h2 class="item-subtitle subtitle">Screen Illustrations</h2>
-              <p class="item-text text">Design</p>
+              <h2 class="card subtitle">Screen Illustrations</h2>
+              <p class="card text">Design</p>
             </a>
           </li>
           <!-- Card #6 -->
-          <li class="card list">
+          <li class="card item">
             <a href="#" class="link">
               <img
                 src="./images/portfolio/img-6.jpg"
@@ -142,12 +145,12 @@
                 width="360"
                 height="300"
               />
-              <h2 class="item-subtitle subtitle">Online Courses</h2>
-              <p class="item-text text">Marketing</p>
+              <h2 class="card subtitle">Online Courses</h2>
+              <p class="card text">Marketing</p>
             </a>
           </li>
           <!-- Card #7 -->
-          <li class="card list">
+          <li class="card item">
             <a href="#" class="link">
               <img
                 src="./images/portfolio/img-7.jpg"
@@ -155,12 +158,12 @@
                 width="360"
                 height="300"
               />
-              <h2 class="item-subtitle subtitle">Instagram Stories Concept</h2>
-              <p class="item-text text">Design</p>
+              <h2 class="card subtitle">Instagram Stories Concept</h2>
+              <p class="card text">Design</p>
             </a>
           </li>
           <!-- Card #8 -->
-          <li class="card list">
+          <li class="card item">
             <a href="#" class="link">
               <img
                 src="./images/portfolio/img-8.jpg"
@@ -168,12 +171,12 @@
                 width="360"
                 height="300"
               />
-              <h2 class="item-subtitle subtitle">Organic Food</h2>
-              <p class="item-text text">Web Site</p>
+              <h2 class="card subtitle">Organic Food</h2>
+              <p class="card text">Web Site</p>
             </a>
           </li>
           <!-- Card #9 -->
-          <li class="card list">
+          <li class="card item">
             <a href="#" class="link">
               <img
                 src="./images/portfolio/img-9.jpg"
@@ -181,8 +184,8 @@
                 width="360"
                 height="300"
               />
-              <h2 class="item-subtitle subtitle">Fresh Coffee</h2>
-              <p class="item-text text">Web Site</p>
+              <h2 class="card subtitle">Fresh Coffee</h2>
+              <p class="card text">Web Site</p>
             </a>
           </li>
         </ul>
