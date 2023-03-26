@@ -47,7 +47,7 @@ button {
 .list {
   list-style: none;
 }
-.link .logo {
+.link {
   text-decoration: none;
 }
 /*--- задаем размер контейнера всей старницы---*/
@@ -91,6 +91,10 @@ body {
 
 /*------------------ Header ---------------------------*/
 /*-------LOGO+NAV Studio+Portfolio pages --------*/
+.header {
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
 .logo {
   font-family: 'Raleway', sans-serif;
   font-weight: 800;
@@ -100,7 +104,7 @@ body {
   text-transform: uppercase;
   color: var(--logo-color);
 }
-.accent.header {
+.header.accent {
   color: var(--logo-accent-header-color);
 }
 
@@ -144,6 +148,7 @@ body {
   text-align: center;
   letter-spacing: 0.02em;
   color: var(--hero-title-color);
+  padding: 188px;
 }
 
 .hero.btn {
@@ -154,6 +159,7 @@ body {
   letter-spacing: 0.04em;
   color: var(--hero-btn-color);
   background-color: var(--hero-btn-background-color);
+  margin: 48px
 }
 .hero.btn:hover,
 .hero.btn:focus {
@@ -161,7 +167,13 @@ body {
 }
 
 /*------Portfolio page. MAIN -------*/
-/*---------------------- Section 1 -----------------------*/
+.portfolio h3 {
+  padding-top: 32px;
+}
+.portfolio p {
+  padding-top: 8px;
+}
+/*--------------------Section 1 Hero -----------------------*/
 .list.btn {
   font-family: inherit;
   font-weight: 500;
@@ -176,13 +188,40 @@ body {
   background-color: var(--list-btn-hoverfocus-background-color);
   color: var(--list-btn-hoverfocus-color);
 }
-
-/*---------------------- Section 4 -----------------------*/
-.team {
-  background-color: var(--team-background-color) #f4f4fd;
+/*---------------------- Section 2 Priorities -----------------------*/
+.priorities div{
+  margin-top: 120px;
 }
-.team.item {
-  background-color: var(--team-item-background-color);
+.priorities p {
+  padding-top: 8px;
+}
+/*---------------------- Section 3 Doing -----------------------*/
+.doing div {
+  margin-top: 120px;
+}
+.doing ul {
+  padding-top: 72px;
+}
+
+/*------------------ Section 4 Team -----------------*/
+.team {
+  background-color: var(--team-background-color);
+}
+  .team div {
+  margin-top: 120px;
+}
+.team h2 {
+  padding-top: 120px;
+}
+.team ul {
+  padding-top: 72px;
+
+}
+.team h3 {
+  padding-top: 32px;
+}
+.team p {
+  padding-top: 8px;
 }
 /*-------------- FOOTER - Подвал страницы ---------------*/
 .footer {
@@ -192,15 +231,13 @@ body {
   letter-spacing: 0.02em;
   color: var(--footer-color);
 }
-.logo {
-  font-family: 'Raleway', sans-serif;
-  font-weight: 800;
-  font-size: 18px;
-  line-height: 1.17;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: var(--logo-color);
+.foot.logo.link {
+  padding-top: 100px;
 }
-.accent.footer {
+
+.footer.accent {
   color: var(--logo-accent-footer-color);
+}
+.footer.text {
+  padding-top: 16px;
 }
