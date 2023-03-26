@@ -91,7 +91,7 @@ body {
 
 /*------------------ Header ---------------------------*/
 /*-------LOGO+NAV Studio+Portfolio pages --------*/
-.header {
+.header div {
   padding-top: 24px;
   padding-bottom: 24px;
 }
@@ -107,7 +107,6 @@ body {
 .header.accent {
   color: var(--logo-accent-header-color);
 }
-
 .nav.link {
   font-weight: 500;
   font-size: 16px;
@@ -126,7 +125,6 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
 }
-
 .address.link {
   color: var(--address-color);
 }
@@ -134,7 +132,38 @@ body {
 .address.link:focus {
   color: #404bbf;
 }
-/*-------------Studio page. MAIN --------------*/
+/*-- Section Portfolio filter list --*/
+.list.btn {
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: var(--list-btn-color);
+  background-color: var(--list-btn-background-color);
+}
+.list.btn:hover,
+.list.btn:focus {
+  background-color: var(--list-btn-hoverfocus-background-color);
+  color: var(--list-btn-hoverfocus-color);
+}
+
+/*------Portfolio page. MAIN -------*/
+.filter.list {
+padding-top: 96px;
+padding-bottom: 72px;
+}
+.portfolio h3 {
+  padding-top: 32px;
+}
+.portfolio p {
+  padding-top: 8px;
+}
+
+.portfolio div {
+padding-bottom: 120px;
+}
+/*--------------------Section 1 Hero -----------------------*/
 .hero.portfolio {
   background-color: inherit;
 }
@@ -159,48 +188,27 @@ body {
   letter-spacing: 0.04em;
   color: var(--hero-btn-color);
   background-color: var(--hero-btn-background-color);
-  margin: 48px
+  margin-bottom: 188px;
 }
 .hero.btn:hover,
 .hero.btn:focus {
   background-color: var(--hero-btn-hoverfocus-background-color);
 }
 
-/*------Portfolio page. MAIN -------*/
-.portfolio h3 {
-  padding-top: 32px;
-}
-.portfolio p {
-  padding-top: 8px;
-}
-/*--------------------Section 1 Hero -----------------------*/
-.list.btn {
-  font-family: inherit;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.04em;
-  color: var(--list-btn-color);
-  background-color: var(--list-btn-background-color);
-}
-.list.btn:hover,
-.list.btn:focus {
-  background-color: var(--list-btn-hoverfocus-background-color);
-  color: var(--list-btn-hoverfocus-color);
-}
 /*---------------------- Section 2 Priorities -----------------------*/
-.priorities div{
-  margin-top: 120px;
+.priorities ul {
+padding-top: 120px;
 }
 .priorities p {
   padding-top: 8px;
 }
 /*---------------------- Section 3 Doing -----------------------*/
-.doing div {
-  margin-top: 120px;
+.doing h2 {
+  padding-top: 120px;
 }
 .doing ul {
   padding-top: 72px;
+  padding-bottom: 120px;
 }
 
 /*------------------ Section 4 Team -----------------*/
@@ -215,13 +223,14 @@ body {
 }
 .team ul {
   padding-top: 72px;
-
+  padding-bottom: 120px;
 }
 .team h3 {
   padding-top: 32px;
 }
 .team p {
   padding-top: 8px;
+  padding-bottom: 32px;
 }
 /*-------------- FOOTER - Подвал страницы ---------------*/
 .footer {
