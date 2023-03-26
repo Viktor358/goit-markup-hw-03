@@ -240,8 +240,9 @@ padding-top: 120px;
   letter-spacing: 0.02em;
   color: var(--footer-color);
 }
-.foot.logo.link {
+.footer div {
   padding-top: 100px;
+  padding-bottom: 100px;
 }
 
 .footer.accent {
