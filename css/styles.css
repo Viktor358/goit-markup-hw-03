@@ -24,7 +24,7 @@
   --footer-color: #f4f4fd;
 }
 
-/*--- Сброс всех стилей браузера, для удобвства делаем всегда !---*/
+/*--- Всегда делаем Сброс всех стилей браузера, для удобвства!---*/
 p,
 h1,
 h2,
@@ -44,6 +44,9 @@ address {
 button {
   cursor: pointer;
 }
+img {
+  display: block;
+}
 .list {
   list-style: none;
 }
@@ -57,7 +60,7 @@ button {
   padding-right: 15px;
   margin: 0 auto;
 }
-
+/*--- задаем стандартные значения для всей страницы---*/
 body {
   background-color: #ffffff;
   font-family: 'Roboto', sans-serif;
@@ -149,26 +152,36 @@ body {
 }
 
 /*------Portfolio page. MAIN -------*/
+.portfolio div {
+  margin-top: 96px;
+  margin-bottom: 120px;
+}
 .filter.list {
-padding-top: 96px;
-padding-bottom: 72px;
+  padding-bottom: 72px;
+}
+.portfolio img {
+  padding-bottom: 32px;
 }
 .portfolio h3 {
-  padding-top: 32px;
+  padding-bottom: 8px;
 }
 .portfolio p {
-  padding-top: 8px;
-}
-
-.portfolio div {
-padding-bottom: 120px;
+  padding-bottom: 32px;
 }
 /*--------------------Section 1 Hero -----------------------*/
-.hero.portfolio {
-  background-color: inherit;
-}
 .hero {
   background-color: var(--hero-background-color);
+}
+.hero div {
+  padding-top: 188px;
+  padding-bottom: 292px;
+  margin-bottom: 120px;
+}
+.hero h1 {
+  padding-bottom: 48px;
+}
+.hero.portfolio {
+  background-color: inherit;
 }
 .hero.title {
   font-weight: 700;
@@ -177,9 +190,7 @@ padding-bottom: 120px;
   text-align: center;
   letter-spacing: 0.02em;
   color: var(--hero-title-color);
-  padding: 188px;
 }
-
 .hero.btn {
   font-family: inherit;
   font-weight: 500;
@@ -188,7 +199,6 @@ padding-bottom: 120px;
   letter-spacing: 0.04em;
   color: var(--hero-btn-color);
   background-color: var(--hero-btn-background-color);
-  margin-bottom: 188px;
 }
 .hero.btn:hover,
 .hero.btn:focus {
@@ -196,34 +206,30 @@ padding-bottom: 120px;
 }
 
 /*---------------------- Section 2 Priorities -----------------------*/
-.priorities ul {
-padding-top: 120px;
+.priorities div {
+  margin-bottom: 120px;
 }
-.priorities p {
-  padding-top: 8px;
+.priorities h3 {
+  padding-bottom: 8px;
 }
 /*---------------------- Section 3 Doing -----------------------*/
-.doing h2 {
-  padding-top: 120px;
+.doing div {
+  margin-bottom: 120px;
 }
 .doing ul {
   padding-top: 72px;
-  padding-bottom: 120px;
 }
 
 /*------------------ Section 4 Team -----------------*/
 .team {
   background-color: var(--team-background-color);
 }
-  .team div {
-  margin-top: 120px;
+.team div {
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 .team h2 {
-  padding-top: 120px;
-}
-.team ul {
-  padding-top: 72px;
-  padding-bottom: 120px;
+  padding-bottom: 72px;
 }
 .team h3 {
   padding-top: 32px;
@@ -243,6 +249,10 @@ padding-top: 120px;
 .footer div {
   padding-top: 100px;
   padding-bottom: 100px;
+}
+.box {
+  width: 264px;
+  height: 112px;
 }
 
 .footer.accent {
