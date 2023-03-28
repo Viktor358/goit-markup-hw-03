@@ -60,6 +60,10 @@ img {
   padding-right: 15px;
   margin: 0 auto;
 }
+.section {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
 /*--- задаем стандартные значения для всей страницы---*/
 body {
   background-color: #ffffff;
@@ -175,7 +179,6 @@ body {
 .hero div {
   padding-top: 188px;
   padding-bottom: 292px;
-  margin-bottom: 120px;
 }
 .hero h1 {
   padding-bottom: 48px;
@@ -207,15 +210,12 @@ body {
 
 /*---------------------- Section 2 Priorities -----------------------*/
 .priorities div {
-  margin-bottom: 120px;
+  padding-top: 120px;
 }
 .priorities h3 {
   padding-bottom: 8px;
 }
 /*---------------------- Section 3 Doing -----------------------*/
-.doing div {
-  margin-bottom: 120px;
-}
 .doing ul {
   padding-top: 72px;
 }
@@ -223,10 +223,6 @@ body {
 /*------------------ Section 4 Team -----------------*/
 .team {
   background-color: var(--team-background-color);
-}
-.team div {
-  padding-top: 120px;
-  padding-bottom: 120px;
 }
 .team h2 {
   padding-bottom: 72px;
