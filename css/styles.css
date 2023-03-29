@@ -101,6 +101,7 @@ body {
 .header div {
   padding-top: 24px;
   padding-bottom: 24px;
+  border-bottom: 1px solid #e7e9fc;
 }
 .logo {
   font-family: 'Raleway', sans-serif;
@@ -113,6 +114,16 @@ body {
 }
 .header.accent {
   color: var(--logo-accent-header-color);
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+}
+.nav.list {
+  display: flex;
+  margin-left: 76px;
+  gap: 40px;
 }
 .nav.link {
   font-weight: 500;
@@ -131,6 +142,8 @@ body {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  display: flex;
+  margin-left: auto;
 }
 .address.link {
   color: var(--address-color);
@@ -139,8 +152,18 @@ body {
 .address.link:focus {
   color: #404bbf;
 }
+.address.list {
+  gap: 40px;
+}
+
 /*-- Section Portfolio filter list --*/
+.filter.list {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
 .list.btn {
+  height: 48px;
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
@@ -148,6 +171,9 @@ body {
   letter-spacing: 0.04em;
   color: var(--list-btn-color);
   background-color: var(--list-btn-background-color);
+  padding: 12px 24px 12px 24px;
+  border: 1px solid #e7e9fc;
+  border-radius: 4px;
 }
 .list.btn:hover,
 .list.btn:focus {
@@ -172,6 +198,11 @@ body {
 .portfolio p {
   padding-bottom: 32px;
 }
+.card.list {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  text-align: center;
 /*--------------------Section 1 Hero -----------------------*/
 .hero {
   background-color: var(--hero-background-color);
@@ -179,6 +210,10 @@ body {
 .hero div {
   padding-top: 188px;
   padding-bottom: 292px;
+  box-sizing: content-box;
+  width: 496px;
+  height: 120px;
+  text-align: center;
 }
 .hero h1 {
   padding-bottom: 48px;
@@ -186,15 +221,17 @@ body {
 .hero.portfolio {
   background-color: inherit;
 }
+
 .hero.title {
   font-weight: 700;
   font-size: 56px;
   line-height: 1.07;
-  text-align: center;
   letter-spacing: 0.02em;
   color: var(--hero-title-color);
 }
 .hero.btn {
+  width: 169px;
+  height: 56px;
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
@@ -202,6 +239,8 @@ body {
   letter-spacing: 0.04em;
   color: var(--hero-btn-color);
   background-color: var(--hero-btn-background-color);
+  border-radius: 4px;
+  margin-right: auto;
 }
 .hero.btn:hover,
 .hero.btn:focus {
@@ -212,6 +251,14 @@ body {
 .priorities div {
   padding-top: 120px;
 }
+
+.priorities.list {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  border: 1px solid #000000;
+}
+
 .priorities h3 {
   padding-bottom: 8px;
 }
@@ -220,6 +267,11 @@ body {
   padding-top: 72px;
 }
 
+.doing.list {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
 /*------------------ Section 4 Team -----------------*/
 .team {
   background-color: var(--team-background-color);
@@ -229,31 +281,36 @@ body {
 }
 .team h3 {
   padding-top: 32px;
+  background-color: var(--team-item-background-color);
 }
 .team p {
   padding-top: 8px;
   padding-bottom: 32px;
+  background-color: var(--team-item-background-color);
+}
+
+.team.list {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  text-align: center;
 }
 /*-------------- FOOTER - Подвал страницы ---------------*/
 .footer {
   background-color: var(--footer-background-color);
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  color: var(--footer-color);
-}
-.footer div {
   padding-top: 100px;
   padding-bottom: 100px;
 }
-.box {
-  width: 264px;
-  height: 112px;
+.footer-item {
+  color: var(--footer-color);
+  padding-top: 16px;
 }
-
-.footer.accent {
+.footer-accent {
   color: var(--logo-accent-footer-color);
 }
-.footer.text {
-  padding-top: 16px;
+.footer div {
+  box-sizing: content-box;
+  width: 264px;
+  height: 112px;
+  margin-left: 0;
 }
