@@ -58,7 +58,8 @@ img {
   width: 1128px;
   padding-left: 15px;
   padding-right: 15px;
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 .section {
   padding-top: 120px;
@@ -159,8 +160,9 @@ body {
 /*-- Section Portfolio filter list --*/
 .filter.list {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   gap: 24px;
+  justify-content: center;
 }
 .list.btn {
   height: 48px;
@@ -181,7 +183,7 @@ body {
   color: var(--list-btn-hoverfocus-color);
 }
 
-/*------Portfolio page. MAIN -------*/
+/*--------------Portfolio page. MAIN ---------------*/
 .portfolio div {
   margin-top: 96px;
   margin-bottom: 120px;
@@ -189,20 +191,31 @@ body {
 .filter.list {
   padding-bottom: 72px;
 }
-.portfolio img {
-  padding-bottom: 32px;
-}
-.portfolio h3 {
-  padding-bottom: 8px;
-}
-.portfolio p {
-  padding-bottom: 32px;
-}
 .card.list {
   display: flex;
-  align-items: center;
-  gap: 24px;
-  text-align: center;
+  flex-wrap: wrap;
+  flex-basis:calc((100% - 2 * 24px) / 3)
+  row-gap: 48px;
+  column-gap: 24;
+  align-items: flex-start;
+}
+.card li {
+  width: 360px;
+  padding-bottom: 32px;
+  border: 1px solid #e7e9fc;
+}
+.card h3 {
+  padding-top: 32px;
+  padding-bottom: 8px;
+}
+.card h3 {
+  padding-left: 16px;
+}
+.card p {
+  padding-left: 16px;
+}
+
+
 /*--------------------Section 1 Hero -----------------------*/
 .hero {
   background-color: var(--hero-background-color);
@@ -221,7 +234,6 @@ body {
 .hero.portfolio {
   background-color: inherit;
 }
-
 .hero.title {
   font-weight: 700;
   font-size: 56px;
