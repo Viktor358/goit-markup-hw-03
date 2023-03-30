@@ -55,7 +55,7 @@ img {
 }
 /*--- задаем размер контейнера всей старницы---*/
 .container {
-  width: 1128px;
+  width: 1158px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
@@ -159,6 +159,8 @@ body {
 
 /*-- Section Portfolio filter list --*/
 .filter.list {
+  padding-top: 93px;
+  padding-bottom: 72px;
   display: flex;
   align-items: flex-start;
   gap: 24px;
@@ -173,7 +175,6 @@ body {
   letter-spacing: 0.04em;
   color: var(--list-btn-color);
   background-color: var(--list-btn-background-color);
-  padding: 12px 24px 12px 24px;
   border: 1px solid #e7e9fc;
   border-radius: 4px;
 }
@@ -184,37 +185,24 @@ body {
 }
 
 /*--------------Portfolio page. MAIN ---------------*/
-.portfolio div {
-  margin-top: 96px;
-  margin-bottom: 120px;
-}
-.filter.list {
-  padding-bottom: 72px;
-}
-.card.list {
+.cards {
+  padding-bottom: 120px;
+
   display: flex;
   flex-wrap: wrap;
-  flex-basis:calc((100% - 2 * 24px) / 3)
-  row-gap: 48px;
-  column-gap: 24;
-  align-items: flex-start;
 }
-.card li {
-  width: 360px;
+.signature {
+  padding-top: 32px;
+  padding-left: 16px;
   padding-bottom: 32px;
   border: 1px solid #e7e9fc;
-}
-.card h3 {
-  padding-top: 32px;
-  padding-bottom: 8px;
-}
-.card h3 {
-  padding-left: 16px;
-}
-.card p {
-  padding-left: 16px;
-}
 
+  width: 360px;
+  flex-basis: calc((100%-2 * 15px) / 3);
+}
+.signature.p {
+  padding-top: 8px;
+}
 
 /*--------------------Section 1 Hero -----------------------*/
 .hero {
