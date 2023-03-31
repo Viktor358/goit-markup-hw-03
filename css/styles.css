@@ -1,7 +1,8 @@
 :root {
+  --body-background-color: #e5e5e5;
   --logo-color: #4d5ae5;
-  --logo-accent-header-color: #2e2f42;
-  --logo-accent-footer-color: #f4f4fd;
+  --logo-header-color: #2e2f42;
+  --logo-footer-color: #f4f4fd;
   --nav-background-color: #ffffff;
   --nav-color: #2e2f42;
   --nav-hoverfocus-color: #404bbf;
@@ -15,6 +16,9 @@
   --list-btn-background-color: #f4f4fd;
   --list-btn-hoverfocus-background-color: #404bbf;
   --list-btn-hoverfocus-color: #ffffff;
+  --portfolio-background-color: #ffffff;
+  --priorities-background-color: #ffffff;
+  --doing-background-color: #ffffff;
   --main-title-color: #2e2f42;
   --main-subtitle-color: #2e2f42;
   --main-text-color: #434455;
@@ -64,7 +68,10 @@ img {
 
 /*--- задаем стандартные значения для всей страницы---*/
 body {
-  background-color: #ffffff;
+  width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: var(--body-background-color);
   font-family: 'Roboto', sans-serif;
   color: #434455;
 }
@@ -96,12 +103,15 @@ body {
 
 /*------------------ Header ---------------------------*/
 /*-------LOGO+NAV Studio+Portfolio pages --------*/
+header {
+  background-color: var(--nav-background-color);
+  border-bottom: 1px solid #e7e9fc;
+}
 .header div {
   padding-top: 24px;
   padding-bottom: 24px;
-  border-bottom: 1px solid #e7e9fc;
 }
-.logo {
+a.logo {
   font-family: 'Raleway', sans-serif;
   font-weight: 800;
   font-size: 18px;
@@ -110,8 +120,8 @@ body {
   text-transform: uppercase;
   color: var(--logo-color);
 }
-.header.accent {
-  color: var(--logo-accent-header-color);
+span.logo.header {
+  color: var(--logo-header-color);
 }
 
 .nav {
@@ -184,6 +194,9 @@ button.list.btn:focus {
 }
 
 /*--------------Portfolio page. MAIN ---------------*/
+section.portfolio {
+  background-color: var(--portfolio-background-color);
+}
 div.cards {
   padding-bottom: 120px;
 }
@@ -250,6 +263,7 @@ button.hero.btn:focus {
 /*---------------------- Section 2 Priorities -----------------------*/
 section.priorities {
   padding-top: 120px;
+  background-color: var(--priorities-background-color);
 }
 
 ul.priorities.list {
@@ -265,6 +279,7 @@ h3.priorities.subtitle {
 section.doing {
   padding-top: 120px;
   padding-bottom: 120px;
+  background-color: var(--doing-background-color);
 }
 ul.doing.list {
   padding-top: 72px;
@@ -296,32 +311,35 @@ li.team.item {
 }
 div.team.signature {
   background: var(--team-item-background-color);
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
   border-radius: 0px 0px 4px 4px;
   border-top: none;
 }
-h3.card.subtitle {
+h3.team.subtitle {
   padding-top: 32px;
   padding: auto;
 }
-p.card.text {
+p.team.text {
   padding-top: 8px;
   padding-bottom: 32px;
 }
 /*-------------- FOOTER - Подвал страницы ---------------*/
-.footer {
+footer {
   background-color: var(--footer-background-color);
   padding-top: 100px;
   padding-bottom: 100px;
 }
-.footer-item {
-  color: var(--footer-color);
-  padding-top: 16px;
-}
-.footer-accent {
-  color: var(--logo-accent-footer-color);
-}
-div.footer {
+div.container.box {
   box-sizing: content-box;
   width: 264px;
-  margin-left: 0;
+  margin-left: 156px;
+}
+
+span.logo.footer {
+  color: var(--logo-footer-color);
+}
+p.footer.item.text {
+  color: var(--footer-color);
+  padding-top: 16px;
 }
