@@ -57,7 +57,7 @@ img {
 .link {
   text-decoration: none;
 }
-/*--- задаем размер контейнера всей старницы---*/
+/*--- задаем размер контейнера всей страницы---*/
 .container {
   width: 1158px;
   padding-left: 15px;
@@ -65,7 +65,6 @@ img {
   margin-left: auto;
   margin-right: auto;
 }
-
 /*--- задаем стандартные значения для всей страницы---*/
 body {
   width: 1440px;
@@ -74,6 +73,22 @@ body {
   background-color: var(--body-background-color);
   font-family: 'Roboto', sans-serif;
   color: #434455;
+}
+
+.logo {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--logo-color);
+}
+.logo.header {
+  color: var(--logo-header-color);
+}
+.logo.footer {
+  color: var(--logo-footer-color);
 }
 
 .title {
@@ -85,7 +100,6 @@ body {
   text-transform: capitalize;
   color: var(--main-title-color);
 }
-
 .subtitle {
   font-weight: 500;
   font-size: 20px;
@@ -93,7 +107,6 @@ body {
   letter-spacing: 0.02em;
   color: var(--main-subtitle-color);
 }
-
 .text {
   font-size: 16px;
   line-height: 1.5;
@@ -102,26 +115,14 @@ body {
 }
 
 /*------------------ Header ---------------------------*/
-/*-------LOGO+NAV Studio+Portfolio pages --------*/
-header {
+/*-------NAV Studio+Portfolio pages --------*/
+.header {
   background-color: var(--nav-background-color);
   border-bottom: 1px solid #e7e9fc;
 }
 .header div {
   padding-top: 24px;
   padding-bottom: 24px;
-}
-a.logo {
-  font-family: 'Raleway', sans-serif;
-  font-weight: 800;
-  font-size: 18px;
-  line-height: 1.17;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: var(--logo-color);
-}
-span.logo.header {
-  color: var(--logo-header-color);
 }
 
 .nav {
@@ -153,6 +154,9 @@ span.logo.header {
   display: flex;
   margin-left: auto;
 }
+.address.list {
+  gap: 40px;
+}
 .address.link {
   color: var(--address-color);
 }
@@ -160,12 +164,14 @@ span.logo.header {
 .address.link:focus {
   color: #404bbf;
 }
-.address.list {
-  gap: 40px;
-}
 
 /*-- Section Portfolio filter list --*/
-ul.filter.list {
+
+/*--------------Portfolio page. MAIN ---------------*/
+.portfolio {
+  background-color: var(--portfolio-background-color);
+}
+.portfolio ul {
   padding-top: 93px;
   padding-bottom: 72px;
   display: flex;
@@ -173,7 +179,7 @@ ul.filter.list {
   gap: 24px;
   justify-content: center;
 }
-button.list.btn {
+.portfolio button {
   height: 48px;
   font-family: inherit;
   font-weight: 500;
@@ -187,45 +193,41 @@ button.list.btn {
   border: 1px solid #e7e9fc;
   border-radius: 4px;
 }
-button.list.btn:hover,
-button.list.btn:focus {
+.portfolio button:hover,
+.portfolio button:focus {
   background-color: var(--list-btn-hoverfocus-background-color);
   color: var(--list-btn-hoverfocus-color);
 }
 
-/*--------------Portfolio page. MAIN ---------------*/
-section.portfolio {
-  background-color: var(--portfolio-background-color);
-}
-div.cards {
+.cards {
   padding-bottom: 120px;
 }
 
-ul.card.list {
+.cards ul {
   display: flex;
   flex-wrap: wrap;
   row-gap: 48px;
   column-gap: 24px;
 }
-div.card.signature {
+.name {
   border: 1px solid #e7e9fc;
   border-top: none;
 }
-h3.card.subtitle {
+.cards h3 {
   padding-top: 32px;
   padding-left: 16px;
 }
-p.card.text {
+.cards p {
   padding-top: 8px;
   padding-left: 16px;
   padding-bottom: 32px;
 }
 
 /*--------------------Section 1 Hero -----------------------*/
-section.hero {
+.hero {
   background-color: var(--hero-background-color);
 }
-div.container.hero {
+.hero div {
   padding-top: 188px;
   padding-bottom: 292px;
   box-sizing: content-box;
@@ -233,8 +235,7 @@ div.container.hero {
   height: 120px;
   text-align: center;
 }
-
-h1.hero.title {
+.hero h1 {
   font-weight: 700;
   font-size: 56px;
   line-height: 1.07;
@@ -242,7 +243,7 @@ h1.hero.title {
   color: var(--hero-title-color);
   padding-bottom: 48px;
 }
-button.hero.btn {
+.hero button {
   width: 169px;
   height: 56px;
   font-family: inherit;
@@ -255,91 +256,83 @@ button.hero.btn {
   border-radius: 4px;
   margin-right: auto;
 }
-button.hero.btn:hover,
-button.hero.btn:focus {
+.hero button:hover,
+.hero button:focus {
   background-color: var(--hero-btn-hoverfocus-background-color);
 }
 
 /*---------------------- Section 2 Priorities -----------------------*/
-section.priorities {
+.priorities {
   padding-top: 120px;
   background-color: var(--priorities-background-color);
 }
 
-ul.priorities.list {
+.priorities ul {
   display: flex;
   align-items: center;
   gap: 24px;
 }
 
-h3.priorities.subtitle {
+.priorities h3 {
   padding-bottom: 8px;
 }
 /*---------------------- Section 3 Doing -----------------------*/
-section.doing {
+.doing {
   padding-top: 120px;
   padding-bottom: 120px;
   background-color: var(--doing-background-color);
 }
-ul.doing.list {
+.doing ul {
   padding-top: 72px;
   display: flex;
   align-items: center;
   gap: 24px;
 }
 /*------------------ Section 4 Team -----------------*/
-section.team {
+.team {
   box-sizing: border-box;
   background-color: var(--team-background-color);
   padding-top: 120px;
   padding-bottom: 120px;
 }
-h2.team.title {
+.team h2 {
   padding-bottom: 72px;
 }
 
-ul.team.list {
+.team ul {
   display: flex;
   align-items: center;
   gap: 24px;
   text-align: center;
 }
-li.team.item {
+.team li {
   width: 264px;
   height: 380px;
   box-sizing: border-box;
 }
-div.team.signature {
+.member {
   background: var(--team-item-background-color);
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
   border-radius: 0px 0px 4px 4px;
   border-top: none;
-}
-h3.team.subtitle {
   padding-top: 32px;
-  padding: auto;
-}
-p.team.text {
-  padding-top: 8px;
   padding-bottom: 32px;
 }
+.team p {
+  margin-top: 8px;
+}
 /*-------------- FOOTER - Подвал страницы ---------------*/
-footer {
+.footer {
   background-color: var(--footer-background-color);
+}
+.footer div {
+  width: 264px;
+  margin-left: 156px;
   padding-top: 100px;
   padding-bottom: 100px;
 }
-div.container.box {
-  box-sizing: content-box;
-  width: 264px;
-  margin-left: 156px;
-}
-
-span.logo.footer {
-  color: var(--logo-footer-color);
-}
-p.footer.item.text {
+.footer p {
   color: var(--footer-color);
   padding-top: 16px;
 }
