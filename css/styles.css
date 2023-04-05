@@ -38,9 +38,13 @@ h5,
 h6 {
   margin: 0;
 }
+a {
+  text-decoration: none;
+}
 ul {
   margin: 0;
   padding-left: 0;
+  list-style: none;
 }
 address {
   font-style: normal;
@@ -51,12 +55,7 @@ button {
 img {
   display: block;
 }
-.list {
-  list-style: none;
-}
-.link {
-  text-decoration: none;
-}
+
 /*--- задаем размер контейнера всей страницы---*/
 .container {
   width: 1158px;
@@ -146,34 +145,31 @@ body {
 .nav.link:focus {
   color: var(--nav-hoverfocus-color);
 }
-
-.address {
+.address li {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   display: flex;
-  margin-left: auto;
-}
-.address.list {
+  margin-right: 256px;
   gap: 40px;
 }
-.address.link {
+.address a {
   color: var(--address-color);
 }
-.address.link:hover,
-.address.link:focus {
+.address a:hover,
+.address a:focus {
   color: #404bbf;
 }
-
-/*-- Section Portfolio filter list --*/
 
 /*--------------Portfolio page. MAIN ---------------*/
 .portfolio {
   background-color: var(--portfolio-background-color);
 }
-.portfolio ul {
+.filter {
   padding-top: 93px;
   padding-bottom: 72px;
+}
+.portfolio ul {
   display: flex;
   align-items: flex-start;
   gap: 24px;
@@ -202,7 +198,6 @@ body {
 .cards {
   padding-bottom: 120px;
 }
-
 .cards ul {
   display: flex;
   flex-wrap: wrap;
@@ -212,17 +207,13 @@ body {
 .name {
   border: 1px solid #e7e9fc;
   border-top: none;
-}
-.cards h3 {
   padding-top: 32px;
-  padding-left: 16px;
-}
-.cards p {
-  padding-top: 8px;
   padding-left: 16px;
   padding-bottom: 32px;
 }
-
+.cards p {
+  margin-top: 8px;
+}
 /*--------------------Section 1 Hero -----------------------*/
 .hero {
   background-color: var(--hero-background-color);
@@ -296,7 +287,7 @@ body {
   padding-bottom: 120px;
 }
 .team h2 {
-  padding-bottom: 72px;
+  margin-bottom: 72px;
 }
 
 .team ul {
@@ -334,5 +325,5 @@ body {
 }
 .footer p {
   color: var(--footer-color);
-  padding-top: 16px;
+  margin-top: 16px;
 }
