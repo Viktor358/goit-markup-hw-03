@@ -145,7 +145,7 @@ body {
 .nav.link:focus {
   color: var(--nav-hoverfocus-color);
 }
-.address li {
+.contacts li {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -153,11 +153,11 @@ body {
   margin-right: 256px;
   gap: 40px;
 }
-.address a {
+.contact a {
   color: var(--address-color);
 }
-.address a:hover,
-.address a:focus {
+.contact a:hover,
+.contact a:focus {
   color: #404bbf;
 }
 
